@@ -1,0 +1,22 @@
+my algorithm is so simple and these are the steps :
+
+1/convert the .PLY file to .txt file to facilate the extraction of the data.
+
+2/extract the data from txt .file to a 2D array (lignes :2109,columns : 4).
+
+3/convert the 2D array to a vector of points, each point has(X,Y,Z,reflectivity)//
+
+4/now we do loop on each point in the originale file(uncompressed), 
+
+and we calculate the cartesian distance between the point i from the originale file with all the points in the compressed file,
+
+and store each distance in a vector of distances.
+
+we take the vector of distances and we find the smallest distance,
+
+and take it's index in the vector of distances,
+
+then we put the point that belong to that index in the compressed file, in a new vector of points,
+
+the we get the closest point from the compressed file to the point from the originale file.
+
